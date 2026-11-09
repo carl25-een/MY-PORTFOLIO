@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects by Carleen Edward Nyamanga — IST and cybersecurity work." />
+    <title>Projects | Carleen Edward Nyamanga</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page-sub">
+    <div class="noise" aria-hidden="true"></div>
+    <div class="ambient" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html#top" class="site-logo">Portfolio<span class="site-logo-dot">.</span></a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html#top" class="nav-link">Home</a>
+          <a href="index.html#portfolio-hub" class="nav-link is-active">Portfolio hub</a>
+          <a href="index.html#who-i-am" class="nav-link">Who I am</a>
+          <a href="index.html#skills" class="nav-link">Skills</a>
+          <a href="education.html" class="nav-link">Education</a>
+          <a href="index.html#contact" class="nav-link">Contact me</a>
+        </nav>
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Open menu"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="index.html#top">Home</a>
+      <a href="index.html#portfolio-hub">Portfolio hub</a>
+      <a href="index.html#who-i-am">Who I am</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#contact">Contact me</a>
+    </div>
+
+    <main class="page-main">
+      <header class="showcase-page-head">
+        <p class="showcase-eyebrow mono">Portfolio</p>
+        <h1 class="showcase-title">Projects</h1>
+        <p class="showcase-deck">
+          Real systems I designed, built, and deployed — live demos and code included.
+        </p>
+      </header>
+
+      <nav class="subnav-portfolio" aria-label="Portfolio areas">
+        <a href="index.html#portfolio-hub" class="subnav-link">Hub</a>
+        <a href="projects.html" class="subnav-link is-active">Projects</a>
+        <a href="certifications.html" class="subnav-link">Certifications</a>
+        <a href="tech-stack.html" class="subnav-link">Tech stack</a>
+        <a href="education.html" class="subnav-link">Education</a>
+      </nav>
+
+      <p class="page-back">
+        <a href="index.html#portfolio-hub">← Back to portfolio hub</a>
+      </p>
+
+      <div class="work-grid work-grid--page">
+        <article class="work-card glass">
+          <span class="work-year mono">2026</span>
+          <h3>Karak &amp; Go — Split-the-Bill System</h3>
+          <p>
+            A live web system for Karak &amp; Go, a Nairobi grab-and-go café: the real
+            57-item menu, equal / by-item / custom splits with exact-sum rounding,
+            per-person payment tracking, and M-Pesa STK Push payments via Safaricom
+            Daraja. Built with zero-dependency Node.js and deployed on Railway with
+            persistent storage.
+          </p>
+          <span class="work-tags mono">Node.js · JavaScript · M-Pesa Daraja · Railway</span>
+          <p>
+            <a class="cert-link" href="https://karak-go-split-the-bill-production.up.railway.app" target="_blank" rel="noopener noreferrer">Live site →</a>
+            &nbsp;·&nbsp;
+            <a class="cert-link" href="https://github.com/carl25-een/KARAK-GO-SPLIT-THE-BILL-" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </p>
+        </article>
+        <article class="work-card glass">
+          <span class="work-year mono">2026</span>
+          <h3>AURA — Inventory System</h3>
+          <p>
+            An inventory system for AURA, a clothing brand: products with stock tracked
+            per size (XS–XL and One Size), auto-generated SKUs, a full stock-movement
+            log (restocks, sales, corrections, damaged items), low-stock alerts, and a
+            dashboard valuing stock at both cost and selling price.
+          </p>
+          <span class="work-tags mono">Node.js · JavaScript · Inventory · JSON store</span>
+          <p>
+            <a class="cert-link" href="https://github.com/carl25-een/AURA-INVENTORY-2" target="_blank" rel="noopener noreferrer">GitHub →</a>
+          </p>
+        </article>
+        <article class="work-card glass">
+          <span class="work-year mono">2026</span>
+          <h3>This Portfolio</h3>
+          <p>
+            A hand-built static site — semantic HTML, modern CSS, and vanilla
+            JavaScript (typing hero, scroll reveals, accessible navigation) with no
+            frameworks. Designed to grow with each new project and credential.
+          </p>
+          <span class="work-tags mono">HTML · CSS · JavaScript</span>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p class="mono">
+        © <span id="year"></span> Carleen Edward Nyamanga ·
+        <a href="index.html#portfolio-hub">Portfolio hub</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
